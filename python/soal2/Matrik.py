@@ -1,3 +1,11 @@
+"""
+    Nama Program          : Matrik.py
+    Anggota Kelompok      : - Ariq Hakim Ruswadi            (140810200001)
+                            - Alvaro Dwi Oktaviano          (140810200023)
+                            - Johanes Bagus Prasetyo        (140810200039)
+                            - Rafiansyah Rasyid Wikawang    (140810200061)
+    Tanggal               : 1/11/2021
+"""
 class Matrik:
     #constructor
     def __init__(self, baris = 2, kolom = 2, arr = []):

@@ -1,3 +1,11 @@
+"""
+    Nama Program          : Waktu.py
+    Anggota Kelompok      : - Ariq Hakim Ruswadi            (140810200001)
+                            - Alvaro Dwi Oktaviano          (140810200023)
+                            - Johanes Bagus Prasetyo        (140810200039)
+                            - Rafiansyah Rasyid Wikawang    (140810200061)
+    Tanggal               : 1/11/2021
+"""
 class Waktu:
     def __init__(self,jam = 0, menit = 0, detik = 0):
         if(jam > 23 or menit > 59 or detik > 59):

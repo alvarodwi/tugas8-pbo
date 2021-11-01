@@ -1,3 +1,12 @@
+"""
+    Nama Program          : Soal3.py
+    Anggota Kelompok      : - Ariq Hakim Ruswadi            (140810200001)
+                            - Alvaro Dwi Oktaviano          (140810200023)
+                            - Johanes Bagus Prasetyo        (140810200039)
+                            - Rafiansyah Rasyid Wikawang    (140810200061)
+    Tanggal               : 1/11/2021
+"""
+
 from SlipGaji import SlipGaji
 from Waktu import Waktu
 
