@@ -15,11 +15,20 @@ public:
 
     Bintang(int num)
     {
+        if(num < 0)
+        {
+            cout << "baris tidak boleh negatif!";
+            exit(0);
+        }
         baris = num;
     }
 
     void setBaris(int num)
     {
+        if(num < 0){
+            cout << "baris tidak boleh negatif!";
+            exit(0);
+        }
         baris = num;
     }
 

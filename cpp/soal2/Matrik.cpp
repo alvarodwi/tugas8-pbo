@@ -27,6 +27,11 @@ public:
 
     Matrik(int b, int k)
     {
+        if (b < 0 || k < 0)
+        {
+            cout << "Matrik tidak boleh berordo negatif!";
+            exit(0);
+        }
         baris = b;
         kolom = k;
         initializeArr();
@@ -56,11 +61,21 @@ public:
 
     void setBaris(int b)
     {
+        if (b < 0)
+        {
+            cout << "Matrik tidak boleh berordo negatif!";
+            exit(0);
+        }
         baris = b;
     }
 
     void setKolom(int k)
     {
+        if (k < 0)
+        {
+            cout << "Matrik tidak boleh berordo negatif!";
+            exit(0);
+        }
         kolom = k;
     }
 
@@ -109,29 +124,37 @@ public:
         }
     }
 
-    int *jumlahBaris()
+    void jumlahBaris()
     {
-        static int hasil[10];
+        int jBaris[10] = {0};
         for (int i = 0; i < baris; i++)
         {
             for (int j = 0; j < kolom; j++)
             {
-                hasil[i] += arr[i][j];
+                jBaris[i] += arr[i][j];
             }
         }
-        return hasil;
+        for (int i = 0; i < baris; i++)
+        {
+            cout << "jBaris[" << i << "] = " << jBaris[i] << endl;
+        }
+        cout << endl;
     }
 
-    int *jumlahKolom()
+    void jumlahKolom()
     {
-        static int hasil[10];
+        int jKolom[10] = {0};
         for (int i = 0; i < baris; i++)
         {
             for (int j = 0; j < kolom; j++)
             {
-                hasil[i] += arr[j][i];
+                jKolom[i] += arr[j][i];
             }
         }
-        return hasil;
+        for (int i = 0; i < kolom; i++)
+        {
+            cout << "jKolom[" << i << "] = " << jKolom[i] << endl;
+        }
+        cout << endl;
     }
 };
