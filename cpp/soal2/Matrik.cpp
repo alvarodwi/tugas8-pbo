@@ -9,20 +9,12 @@ private:
     int kolom;
     int arr[10][10];
 
-    void initializeArr()
-    {
-        for (int i = 0; i < 10; i++)
-        {
-            arr[i][i] = 0;
-        }
-    }
-
 public:
     Matrik()
     {
         baris = 2;
         kolom = 2;
-        initializeArr();
+        arr[10][10] = {};
     }
 
     Matrik(int b, int k)
@@ -34,7 +26,7 @@ public:
         }
         baris = b;
         kolom = k;
-        initializeArr();
+        arr[10][10] = {};
     }
 
     void setMatrik(int a[][10], int b, int k)
