@@ -65,9 +65,9 @@ class Matrik:
     
     def jumlahKolom(self):
         jKolom = []
-        for i in range(0,self.__baris):
+        for i in range(0,self.__kolom):
             jKolom.append(0)
-            for j in range(0,self.__kolom):
-                jKolom[i] += self.__arr[j][i]
+            for j in range(0,self.__baris):
+                jKolom[i] += self.__arr[i][j]
     
         print(jKolom)

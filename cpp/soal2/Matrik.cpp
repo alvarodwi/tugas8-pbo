@@ -136,11 +136,11 @@ public:
     void jumlahKolom()
     {
         int jKolom[10] = {0};
-        for (int i = 0; i < baris; i++)
+        for (int i = 0; i < kolom; i++)
         {
-            for (int j = 0; j < kolom; j++)
+            for (int j = 0; j < baris; j++)
             {
-                jKolom[i] += arr[j][i];
+                jKolom[i] += arr[i][j];
             }
         }
         for (int i = 0; i < kolom; i++)
