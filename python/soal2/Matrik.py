@@ -59,7 +59,7 @@ class Matrik:
         for i in range(0,self.__baris):
             jBaris.append(0)
             for j in range(0,self.__kolom):
-                jBaris[i] += self.__arr[i][j]
+                jBaris[i] += self.__arr[j][i]
     
         print(jBaris)
     

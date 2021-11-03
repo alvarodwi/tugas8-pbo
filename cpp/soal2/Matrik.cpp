@@ -140,7 +140,7 @@ public:
         {
             for (int j = 0; j < baris; j++)
             {
-                jKolom[i] += arr[i][j];
+                jKolom[i] += arr[j][i];
             }
         }
         for (int i = 0; i < kolom; i++)
