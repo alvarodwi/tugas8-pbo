@@ -116,9 +116,8 @@ public:
         }
     }
 
-    void jumlahBaris()
+    int *jumlahBaris(int *jBaris)
     {
-        int jBaris[10] = {0};
         for (int i = 0; i < baris; i++)
         {
             for (int j = 0; j < kolom; j++)
@@ -126,16 +125,11 @@ public:
                 jBaris[i] += arr[i][j];
             }
         }
-        for (int i = 0; i < baris; i++)
-        {
-            cout << "jBaris[" << i << "] = " << jBaris[i] << endl;
-        }
-        cout << endl;
+        return jBaris;
     }
 
-    void jumlahKolom()
+    int *jumlahKolom(int *jKolom)
     {
-        int jKolom[10] = {0};
         for (int i = 0; i < kolom; i++)
         {
             for (int j = 0; j < baris; j++)
@@ -143,10 +137,6 @@ public:
                 jKolom[i] += arr[j][i];
             }
         }
-        for (int i = 0; i < kolom; i++)
-        {
-            cout << "jKolom[" << i << "] = " << jKolom[i] << endl;
-        }
-        cout << endl;
+        return jKolom;
     }
 };
